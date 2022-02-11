@@ -1,0 +1,8 @@
+Django==3.2
+
+djangorestframework==3.12.4
+
+pytest-django==4.4.0
+pytest-cov==3.0.0
+pytest-mock==3.6.1
+pytest-xdist==2.4.0
