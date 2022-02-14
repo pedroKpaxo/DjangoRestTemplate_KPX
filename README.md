@@ -19,10 +19,10 @@ You can clone this repository and setup a virtual enviroment with:
 make setup_venv
 ```
 
-Or you can intall the requiremnts in a commom way, running:
+Or you can intall the requiremnts in a common way, running:
 
 ```sh
-make setup_commom
+make setup_common
 ```
 
 ## Usage

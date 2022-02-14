@@ -4,11 +4,23 @@ $(eval $(ARG):;@true)
 up:
 	python manage.py runserver
 
+migrations:
+	python manage.py makemigrations $(ARG)
+
+migrate:
+	python manage.py migrate
+
+createsuperuser:
+	python manage.py createsuperuser
+
+shell:
+	python manage.py shell_plus
+
 startapp:
 	bash scripts/start-app.sh $(ARG)
 
-setup_commom:
-	bash scripts/setup-commom.sh
+setup_common:
+	bash scripts/setup-common.sh
 
 setup_venv:
 	bash scripts/setup-venv.sh
