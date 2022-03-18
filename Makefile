@@ -2,6 +2,7 @@ ARG := $(wordlist 2, $(words $(MAKECMDGOALS)), $(MAKECMDGOALS))
 $(eval $(ARG):;@true)
 
 up:
+	@echo "Running the app from Makefile"
 	python manage.py runserver
 
 migrations:
@@ -13,7 +14,7 @@ migrate:
 	python manage.py migrate
 
 createsuperuser:
-	@echo "Creating super user"
+	@echo "Creating super-user"
 	python manage.py createsuperuser
 
 shell:
@@ -23,8 +24,11 @@ shell:
 startapp:
 	bash scripts/start-app.sh $(ARG)
 
-setup_common:
-	bash scripts/setup-common.sh
+setup_commom:
+	bash scripts/setup-commom.sh
 
 setup_venv:
 	bash scripts/setup-venv.sh
+
+display_author:
+	@echo "PedroKpaxo"
